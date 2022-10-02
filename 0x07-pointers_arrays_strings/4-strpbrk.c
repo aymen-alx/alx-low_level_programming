@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
-*_strpbrk - The _strpbrk() 
-*@s: string where search is made
-*@accept: string where searched bytes are located
-*Return:Returns a pointer 
+* _strpbrk - Search a string for any of a set of bytes.
+* @s: string
+* @accept: string to match
+* Return: Pointer
 */
 
 char *_strpbrk(char *s, char *accept)

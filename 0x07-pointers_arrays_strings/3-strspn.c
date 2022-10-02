@@ -1,30 +1,28 @@
 #include "main.h"
-
 /**
-*_strspn - search the number of bytes 
-*@s:segment targeted
-*@accept:reference bytes container
-*Return:returns the number of bytes 
+*_strspn - return the number of occurent of a string
+* @s: string to check
+* @accept: character to match
+* Return: int
 */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
-	int i;
+	int i, j, cmpt = 0;
 
-	while (*s)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		for (i = 0; accept[i]; i++)
+		for (j = 0; accept[j] > '\0'; j++)
 		{
-			if (accept[i] == *s)
+			if (s[i] == accept[j])
 			{
-				bytes++;
+				cmpt++;
 				break;
 			}
-			else if ((accept[i + 1]) == '\0')
-				return (bytes);
 		}
-		s++;
+		if (accept[j] == '\0')
+		{
+			break;
+		}
 	}
-	return (bytes);
+	return (cmpt);
 }
