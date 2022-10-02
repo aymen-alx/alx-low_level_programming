@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
 * print_buffer -  C function that prints the content of an
 * @b: number of bytes
 * @size: size of the byte
 */
+
 void print_buffer(char *b, int size)
 {
 	int i = 0, j;

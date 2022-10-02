@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * infinite_add - add 2 integers.
  * @n1: integer
@@ -7,6 +8,7 @@
  * size_r: size of r
  * Return: char
  */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int num, tens = 0;
