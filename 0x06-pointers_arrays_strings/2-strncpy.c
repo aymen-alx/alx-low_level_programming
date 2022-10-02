@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * _strncpy - concatenates two strings
 * @dest: pointer destination
@@ -6,6 +7,7 @@
 * @n: number of copy
 * Return: dest
 */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
