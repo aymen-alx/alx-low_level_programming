@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
 * main - prints its name, followed by a new line
-*@argc: arguments size
-*@argv: array of arguments
-*Return: 0
+* @argc: arguments size
+* @argv: array of arguments
+* Return: 0
 */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
